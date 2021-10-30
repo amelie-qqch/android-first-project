@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashActivity" parent="Theme.AppCompat.NoActionBar">      <!-- Point 3-->
+        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>      <!-- Point 2-->
+        <item name="android:windowSplashScreenIconBackgroundColor">#000000</item>      <!-- Point 1-->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/nutri_score_a</item><!-- Point 4-->
+        <item name="android:windowSplashScreenBrandingImage">@drawable/circle</item> </style>
+</resources>
