@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenFoodFacts</string>
+    <string name="details_page_name">Details</string>
     <string name="recipe_name_peas">Carrot and peas</string>
+    <string name="scrollView_menu_description">food image</string>
+    <string name="brand_name">Cassegrain</string>
+    <string name="product_title">product_title</string>
+    <string name="product_subTitle">product_subtitle</string>
 </resources>

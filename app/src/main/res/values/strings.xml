@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Mon comparateur</string>
+    <string name="details_page_name">Détails</string>
     <string name="recipe_name_peas">PETIT POIS !!!!!!!!!</string>
+    <string name="scrollView_menu_description">image du produit</string>
+    <string name="brand_name">Cassegrain</string>
+    <string name="nutriscore_e" translatable="false">234 kCal/part</string>
+    <string name="product_title">product_title</string>
+    <string name="product_subTitle">product_subtitle</string>
+    <string name="nutriscore_e_desc" translatable="false">Nutriscore : A</string>
 </resources>

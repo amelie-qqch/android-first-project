@@ -4,13 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/circle.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_calories.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_empty_saved.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_ranking.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/toolbar.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/food.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/details_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/food.xml" value="0.22" />
         <entry key="app/src/main/res/layout/item.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/list_layout.xml" value="0.14764492753623187" />
-        <entry key="app/src/main/res/layout/new_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_layout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/new_layout.xml" value="0.1" />
       </map>
     </option>
   </component>
