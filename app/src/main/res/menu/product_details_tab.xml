@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_fiche"
+        android:icon="@drawable/ic_tab_detail"
+        android:title="Fiche" />
+
+    <item
+        android:id="@+id/tab_nutrition"
+        android:icon="@drawable/ic_tab_nutrition"
+        android:title="Nutrition" />
+
+    <item
+        android:id="@+id/tab_tableau"
+        android:icon="@drawable/ic_tab_table"
+        android:title="Tableau" />
+
+</menu>

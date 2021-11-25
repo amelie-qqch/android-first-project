@@ -7,4 +7,5 @@
     <string name="brand_name">Cassegrain</string>
     <string name="product_title">product_title</string>
     <string name="product_subTitle">product_subtitle</string>
+    <string name="tab_detail">Détails</string>
 </resources>

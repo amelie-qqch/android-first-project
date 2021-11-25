@@ -8,4 +8,5 @@
     <string name="product_title">product_title</string>
     <string name="product_subTitle">product_subtitle</string>
     <string name="nutriscore_e_desc" translatable="false">Nutriscore : A</string>
+    <string name="tab_detail">Détails</string>
 </resources>
