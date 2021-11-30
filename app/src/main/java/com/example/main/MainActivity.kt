@@ -1,28 +1,27 @@
-package com.example.test
+package com.example.main
 
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.StyleSpan
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_main.*
-import android.content.Intent
+import com.example.test.R
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.setBackgroundDrawable(
+            ContextCompat.getDrawable(this, R.drawable.toolbar)
+        )
         //setContentView(R.layout.list_layout)
         setContentView(R.layout.activity_main)
 

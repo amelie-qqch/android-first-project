@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.example.test.R
 import kotlinx.android.synthetic.main.new_details_layout.*
 
 class ProductDetailsFragment : Fragment() {

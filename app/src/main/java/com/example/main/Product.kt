@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.main
 
 class Product(
     val url: String,
