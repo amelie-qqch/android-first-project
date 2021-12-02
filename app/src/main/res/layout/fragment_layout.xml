@@ -5,7 +5,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/recipe_name_peas"
+        android:text="@string/product_name"
         android:textSize="20sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

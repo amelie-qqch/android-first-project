@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Mon comparateur</string>
     <string name="details_page_name">Détails</string>
-    <string name="recipe_name_peas">PETIT POIS !!!!!!!!!</string>
-    <string name="scrollView_menu_description">image du produit</string>
-    <string name="brand_name">Cassegrain</string>
-    <string name="nutriscore_e" translatable="false">234 kCal/part</string>
+    <string name="product_name">PETIT POIS !!!!!!!!!</string>
+    <string name="product_brand">Cassegrain</string>
+    <string name="product_weight">Quantité: 400g (280g net égoutté)</string>
+    <string name="product_countries">Vendu en: France, Japon, Suisse</string>
+    <string name="product_ingredients">Ingrédients: Petits pois 66%, eau, garniture 2,8% (salade, oignons grelot), sucre …</string>
+    <string name="product_allergens">Substances allergènes: Aucune</string>
+    <string name="product_additives">Additifs: Aucun</string><string name="product_bar_code">Code barres: 3083680085304</string>
     <string name="product_title">product_title</string>
     <string name="product_subTitle">product_subtitle</string>
+    <string name="nutriscore_e" translatable="false">234 kCal/part</string>
     <string name="nutriscore_e_desc" translatable="false">Nutriscore : A</string>
+    <string name="scrollView_menu_description">image du produit</string>
     <string name="tab_detail">Détails</string>
+
 </resources>

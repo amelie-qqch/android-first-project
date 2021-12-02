@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:text="@string/recipe_name_peas"
+            android:text="@string/product_name"
             android:textSize="15sp"
             android:textStyle="italic|bold"
             app:layout_constraintEnd_toStartOf="@+id/nutriscore"

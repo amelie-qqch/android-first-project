@@ -1,14 +1,16 @@
 package com.example.main
 
 class Product(
-    val url: String,
-    val title: String,
-    val brand: String,
-    val nutriscore: String,
-    val calories: String,
-    val weight: String,
-    val origins: Array<String>,
-    val composition: Array<String>
+        val name: String,
+        val brand: String,
+        val barCode: String,
+        val nutriScore: String,
+        val imageUrl: String,
+        val weight: String,
+        val sellingCountries: String,
+        val ingredients: String,
+        val allergens: String,
+        val additives: String,
 ) {
 
 }

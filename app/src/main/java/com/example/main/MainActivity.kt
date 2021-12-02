@@ -42,15 +42,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: ListItemCell, position: Int) {
-            Picasso.get().load(product[position].url).into(holder.url)
-            holder.title.text       = product[position].title
-            holder.brand.text       = product[position].brand
-            holder.nutriScore.text  = "NutriScore : " + product[position].nutriscore
-            holder.calories.text    = "Calories : " + product[position].calories
-            //itemView vue désigne la cellule
-            holder.itemView.setOnClickListener{
-                listener.onItemClick(position)
-            }
+//            Picasso.get().load(product[position].imageUrl).into(holder.url)
+//            holder.title.text       = product[position].title
+//            holder.brand.text       = product[position].brand
+//            holder.nutriScore.text  = "NutriScore : " + product[position].nutriscore
+//            holder.calories.text    = "Calories : " + product[position].calories
+//            //itemView vue désigne la cellule
+//            holder.itemView.setOnClickListener{
+//                listener.onItemClick(position)
+//            }
         }
 
         override fun getItemCount(): Int {
