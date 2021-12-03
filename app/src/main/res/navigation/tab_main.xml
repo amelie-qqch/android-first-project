@@ -6,11 +6,11 @@
 
     <fragment
         android:id="@+id/tab_fiche"
-        android:name="com.example.main.FirstFragment"
+        android:name="com.example.main.DetailsFragment"
         android:label="FirstFragment" />
     <fragment
         android:id="@+id/tab_nutrition"
-        android:name="com.example.main.Fragment2"
+        android:name="com.example.main.NutritionDetailsFragment"
         android:label="Fragment2" />
     <fragment
         android:id="@+id/tab_tableau"
