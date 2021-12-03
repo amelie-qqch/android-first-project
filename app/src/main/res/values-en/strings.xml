@@ -2,16 +2,14 @@
 <resources>
     <string name="app_name">OpenFoodFacts</string>
     <string name="details_page_name">Details</string>
-    <string name="product_name">Carrot and peas</string>
-    <string name="product_brand">Cassegrain</string>
     <string name="product_title">product_title</string>
     <string name="product_subTitle">product_subtitle</string>
-    <string name="product_bar_code">Bar code: 3083680085304</string>
-    <string name="product_weight">Weight: 400g (drained net 280g)</string>
-    <string name="product_countries">Sold in: France, Japan, Switzerland</string>
-    <string name="product_ingredients">Ingredients: peas 66%, water, garniture 2,8% (salad, spring onions), sugar …</string>
-    <string name="product_allergens">Allergens: none</string>
-    <string name="product_additives">Additives: none</string>
+    <string name="product_bar_code_label">Bar code:</string>
+    <string name="product_weight_label">Weight:</string>
+    <string name="product_countries_label">Sold in:</string>
+    <string name="product_ingredients_label">Ingredients:</string>
+    <string name="product_allergens_label">Allergens:</string>
+    <string name="product_additives_label">Additives:</string>
     <string name="scrollView_menu_description">food image</string>
     <string name="tab_detail">Details</string>
 </resources>
