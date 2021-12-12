@@ -2,7 +2,7 @@ package com.example.main
 
 class NutritionFactsItem (
         val unity: String,
-        val quantityPerPortion: Float,
+        val quantityPerPortion: String,
         val quantityPerHundredGrams: Float,
 ){
 

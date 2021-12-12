@@ -14,6 +14,6 @@
         android:label="Fragment2" />
     <fragment
         android:id="@+id/tab_tableau"
-        android:name="com.example.main.Fragment3"
+        android:name="com.example.main.NutritionalInformationsFragment"
         android:label="Fragment3" />
 </navigation>

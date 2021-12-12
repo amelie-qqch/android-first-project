@@ -15,7 +15,7 @@
         android:textSize="15sp"
         android:textStyle="bold"/>
     <View
-        android:id="@+id/shape_one"
+        android:id="@+id/nutrient_level_lipid"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/circle"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         android:paddingStart="10dp"
-        app:layout_constraintLeft_toRightOf="@id/shape_one"
+        app:layout_constraintLeft_toRightOf="@id/nutrient_level_lipid"
         app:layout_constraintTop_toBottomOf="@id/nutrition_details_page_name"
         android:text="0,8g de Matières grasses / Lipides"
         android:textSize="15sp"
@@ -47,7 +47,7 @@
         android:textSize="15sp"
         />
     <View
-        android:id="@+id/shape_two"
+        android:id="@+id/nutrient_level_saturated_fat"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/circle"
@@ -78,7 +78,7 @@
         android:textSize="15sp"
         />
     <View
-        android:id="@+id/shape_three"
+        android:id="@+id/nutrient_level_sugar"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/circle"
@@ -109,7 +109,7 @@
         android:textSize="15sp"
         />
     <View
-        android:id="@+id/shape_four"
+        android:id="@+id/nutrient_level_salt"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/circle"
