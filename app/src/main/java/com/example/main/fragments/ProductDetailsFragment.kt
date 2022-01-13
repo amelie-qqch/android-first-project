@@ -1,4 +1,4 @@
-package com.example.main
+package com.example.main.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.test.R
-import kotlinx.android.synthetic.main.new_details_layout.*
+import kotlinx.android.synthetic.main.nav_details_layout.*
 
 class ProductDetailsFragment : Fragment() {
     override fun onCreateView(
@@ -17,7 +17,7 @@ class ProductDetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(
-            R.layout.new_details_layout,
+            R.layout.nav_details_layout,
             container,
             false
         )

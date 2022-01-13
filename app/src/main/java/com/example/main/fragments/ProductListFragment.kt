@@ -1,29 +1,30 @@
-package com.example.main
+package com.example.main.fragments
 
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.StyleSpan
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.RecyclerView
+import com.example.main.model.Product
 import com.example.test.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.list_layout.*
+import kotlinx.android.synthetic.main.nav_details_layout.*
 
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+class ProductListFragment: Fragment() {
+//Utiliser un view pager ??
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         val milkRoll = Product(
             "Pains au lait",
             "Pasquier",
@@ -51,42 +52,39 @@ class MainActivity : AppCompatActivity() {
         )
 
         val products = listOf(milkRoll, carrotAndPeas)
-//        val products = listOf<Product>()
+////        val products = listOf<Product>()
+//
+////        if(products.isNotEmpty()) {
+////            setContentView(R.layout.list_layout)
+//
+//            main_list.layoutManager = LinearLayoutManager(
+//                context,
+//                LinearLayoutManager.VERTICAL,
+//                false
+//            )
 
-        supportActionBar?.setBackgroundDrawable(
-            ContextCompat.getDrawable(this, R.drawable.toolbar)
+//            val adapter = ListAdapter(products, object : ItemClickListener {
+//                override fun onItemClicked(position: Int) {
+//                    //TODO
+//                }
+//            })
+//            main_list.adapter = adapter
+
+//            return
+//        }
+//        setContentView(R.layout.empty_list)
+        return inflater.inflate(
+            R.layout.nav_list_layout,
+            container,
+            false
         )
+    }
 
-        if(products.isNotEmpty()) {
-            setContentView(R.layout.list_layout)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-            main_list.layoutManager = LinearLayoutManager(
-                this,
-                LinearLayoutManager.VERTICAL,
-                false
-            )
-
-            val adapter = ListAdapter(products, object : ItemClickListener {
-                override fun onItemClicked(position: Int) {
-                }
-            })
-            main_list.adapter = adapter
-
-            return
-        }
-        setContentView(R.layout.empty_list)
-
-
-
-        //FRAGMENT
-//        setContentView(R.layout.activity_main)
-
-//        supportFragmentManager
-//            .beginTransaction()
-//            //.replace(R.id.container, FirstFragment())
-//            .replace(R.id.container, ProductDetailsFragment())
-//            .commitAllowingStateLoss()
-
+        val navHost = childFragmentManager.findFragmentById(R.id.products_list_nav_host) as NavHostFragment
+        NavigationUI.setupWithNavController(product_details_bottom_nav, navHost.navController) // sera la card du recycler view ?
     }
 
     class ListAdapter(private val products: List<Product>, val listener: ItemClickListener) : RecyclerView.Adapter<ListItemCell>() {
@@ -140,4 +138,5 @@ class MainActivity : AppCompatActivity() {
     interface ItemClickListener {
         fun onItemClicked(position: Int)
     }
+
 }

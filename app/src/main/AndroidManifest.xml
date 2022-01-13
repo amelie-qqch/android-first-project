@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Test"
         tools:targetApi="m">
         <activity
-            android:name="com.example.main.MainActivity"
+            android:name="com.example.main.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

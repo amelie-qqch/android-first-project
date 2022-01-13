@@ -1,4 +1,4 @@
-package com.example.main
+package com.example.main.model
 
 class NutritionFactsItem (
         val unity: String,

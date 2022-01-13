@@ -78,7 +78,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.64"/>
 
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/per_hundred_gram"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -90,7 +90,7 @@
         android:gravity="center"
         android:textStyle="bold"
         app:border="left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -103,7 +103,7 @@
         android:textStyle="bold"
         app:border="left"/>
 
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/energy"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -116,7 +116,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/fat"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -129,7 +129,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/saturated_fat"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -142,7 +142,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/glucids"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -155,7 +155,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sugar"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -168,7 +168,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/dietary_fibres"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -181,7 +181,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/proteins"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -194,7 +194,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/salt"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -207,7 +207,7 @@
         android:gravity="center_vertical"
         android:textStyle="bold"
         app:border="top"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sodium"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -221,7 +221,7 @@
         android:textStyle="bold"
         app:border="top"/>
     
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/energy_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -232,7 +232,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/fat_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -243,7 +243,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/saturated_fat_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -254,7 +254,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/glucids_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -265,7 +265,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sugar_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -276,7 +276,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/dietary_fibres_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -287,7 +287,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/proteins_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -298,7 +298,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/salt_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -309,7 +309,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sodium_per_hundred_grams"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -321,7 +321,7 @@
         android:gravity="center"
         app:border="top|left"/>
     
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/energy_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -332,7 +332,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/fat_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -343,7 +343,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/saturated_fat_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -354,7 +354,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/glucids_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -365,7 +365,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sugar_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -376,7 +376,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/dietary_fibres_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -387,7 +387,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/proteins_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -398,7 +398,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/salt_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -409,7 +409,7 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         app:border="top|left"/>
-    <com.example.main.TableCellView
+    <com.example.main.view.TableCellView
         android:id="@+id/sodium_per_share"
         android:layout_width="0dp"
         android:layout_height="0dp"
