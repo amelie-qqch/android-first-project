@@ -27,7 +27,7 @@ class ProductDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        ProductDetailsFragmentArgs.fromBundle(requireArguments()).product;
+        ProductDetailsFragmentArgs.fromBundle(requireArguments()).product
 //
 //        //retour en arrière
 //        findNavController().navigateUp()

@@ -11,24 +11,34 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.main.model.Product
 import com.example.test.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.empty_list.*
-import kotlinx.android.synthetic.main.item_layout.view.*
 import kotlinx.android.synthetic.main.list_layout.*
-import kotlinx.android.synthetic.main.nav_details_layout.*
 
 class ProductListFragment: Fragment() {
+
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<RecyclerView.ViewHolder>? = null
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        return inflater.inflate(
+            R.layout.list_layout,
+            container,
+            false
+        )
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         val milkRoll = Product(
             "Pains au lait",
             "Pasquier",
@@ -56,71 +66,24 @@ class ProductListFragment: Fragment() {
         )
 
         val products = listOf(milkRoll, carrotAndPeas)
-////        val products = listOf<Product>()
-//
-////        if(products.isNotEmpty()) {
-//            setContentView(R.layout.list_layout)
+        val listAdapter = ListAdapter(products, object : ItemClickListener {
+            override fun onItemClicked(position: Int) {
+                Log.d("POSITION", products.get(position).name)
+                findNavController()
+                    .navigate(
+                        ProductListFragmentDirections.actionItemListToItemDetails(products.get(position))
+                    )
+            }
+        })
 
-//            main_list.layoutManager = LinearLayoutManager(
-//                context,
-//                LinearLayoutManager.VERTICAL,
-//                false
-//            )
-
-            val adapter = ListAdapter(products, object : ItemClickListener {
-                override fun onItemClicked(position: Int) {
-                    //TODO
-                }
-            })
-
-//            main_list.adapter = adapter
-
-//            return
-//        }
-//        setContentView(R.layout.empty_list)
-        return inflater.inflate(
-            R.layout.empty_list,
-            container,
-            false
-        )
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        scan_product_button.setOnClickListener{
-            findNavController()
-                .navigate(
-                    ProductListFragmentDirections.actionItemListToItemDetails(Product(
-                        "Petits pois et carottes",
-                        "Cassegrain",
-                        "3083680085304",
-                        "A",
-                        "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg",
-                        "400 g (280 g net égoutté)",
-                        "France, Japon, Suisse",
-                        "Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel",
-                        "Aucune",
-                        "Aucun"
-                    ))
-                )
+        main_list.apply {
+            layoutManager = LinearLayoutManager(
+                context,
+                LinearLayoutManager.VERTICAL,
+                false
+            )
+            adapter  = listAdapter
         }
-//        view.product_image_view.setOnClickListener{
-//            findNavController()
-//                .navigate(
-//                    ProductListFragmentDirections.actionItemListToItemDetails(Product(
-//                        "Petits pois et carottes",
-//                        "Cassegrain",
-//                        "3083680085304",
-//                        "A",
-//                        "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg",
-//                        "400 g (280 g net égoutté)",
-//                        "France, Japon, Suisse",
-//                        "Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel",
-//                        "Aucune",
-//                        "Aucun"
-//                    ))
-//                )
-//        }
 
     }
 
