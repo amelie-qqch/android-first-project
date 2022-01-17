@@ -18,26 +18,8 @@ class MainActivity : AppCompatActivity() {
             ContextCompat.getDrawable(this, R.drawable.toolbar)
         )
 
-        //FRAGMENT
-        //layout dans lequel se trouve le container
+        //layout dans lequel se trouve le navigation graph
         setContentView(R.layout.activity_main)
-
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.nav_host_fragment_container, ProductListFragment())
-            .commitAllowingStateLoss()
-
-//        val binding = ActivityMainBinding.inflate(layoutInflater)
-//        val view = binding.root
-//        setContentView(view)
-//
-//        if (savedInstanceState == null) {
-//            supportFragmentManager.commit {
-//                setReorderingAllowed(true)
-//                add<ProductDetailsFragment>(R.id.container_view)
-//            }
-//        }
-
     }
 
 

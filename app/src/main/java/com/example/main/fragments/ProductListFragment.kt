@@ -4,6 +4,7 @@ import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.StyleSpan
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,15 +12,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.RecyclerView
 import com.example.main.model.Product
 import com.example.test.R
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.empty_list.*
+import kotlinx.android.synthetic.main.item_layout.view.*
+import kotlinx.android.synthetic.main.list_layout.*
 import kotlinx.android.synthetic.main.nav_details_layout.*
 
 class ProductListFragment: Fragment() {
-//Utiliser un view pager ??
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -55,26 +59,27 @@ class ProductListFragment: Fragment() {
 ////        val products = listOf<Product>()
 //
 ////        if(products.isNotEmpty()) {
-////            setContentView(R.layout.list_layout)
-//
+//            setContentView(R.layout.list_layout)
+
 //            main_list.layoutManager = LinearLayoutManager(
 //                context,
 //                LinearLayoutManager.VERTICAL,
 //                false
 //            )
 
-//            val adapter = ListAdapter(products, object : ItemClickListener {
-//                override fun onItemClicked(position: Int) {
-//                    //TODO
-//                }
-//            })
+            val adapter = ListAdapter(products, object : ItemClickListener {
+                override fun onItemClicked(position: Int) {
+                    //TODO
+                }
+            })
+
 //            main_list.adapter = adapter
 
 //            return
 //        }
 //        setContentView(R.layout.empty_list)
         return inflater.inflate(
-            R.layout.nav_list_layout,
+            R.layout.empty_list,
             container,
             false
         )
@@ -82,9 +87,41 @@ class ProductListFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        scan_product_button.setOnClickListener{
+            findNavController()
+                .navigate(
+                    ProductListFragmentDirections.actionItemListToItemDetails(Product(
+                        "Petits pois et carottes",
+                        "Cassegrain",
+                        "3083680085304",
+                        "A",
+                        "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg",
+                        "400 g (280 g net égoutté)",
+                        "France, Japon, Suisse",
+                        "Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel",
+                        "Aucune",
+                        "Aucun"
+                    ))
+                )
+        }
+//        view.product_image_view.setOnClickListener{
+//            findNavController()
+//                .navigate(
+//                    ProductListFragmentDirections.actionItemListToItemDetails(Product(
+//                        "Petits pois et carottes",
+//                        "Cassegrain",
+//                        "3083680085304",
+//                        "A",
+//                        "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg",
+//                        "400 g (280 g net égoutté)",
+//                        "France, Japon, Suisse",
+//                        "Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel",
+//                        "Aucune",
+//                        "Aucun"
+//                    ))
+//                )
+//        }
 
-        val navHost = childFragmentManager.findFragmentById(R.id.products_list_nav_host) as NavHostFragment
-        NavigationUI.setupWithNavController(product_details_bottom_nav, navHost.navController) // sera la card du recycler view ?
     }
 
     class ListAdapter(private val products: List<Product>, val listener: ItemClickListener) : RecyclerView.Adapter<ListItemCell>() {

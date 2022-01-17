@@ -1,6 +1,10 @@
 package com.example.main.model
 
-class Product(
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Product(
         val name: String,
         val brand: String,
         val barCode: String,
@@ -11,6 +15,6 @@ class Product(
         val ingredients: String,
         val allergens: String,
         val additives: String,
-) {
+): Parcelable {
 
 }

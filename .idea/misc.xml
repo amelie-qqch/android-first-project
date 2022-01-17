@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/drawable/toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/details_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/empty_list.xml" value="0.15273556231003038" />
         <entry key="app/src/main/res/layout/food.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item.xml" value="0.33" />

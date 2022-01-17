@@ -6,10 +6,18 @@
     <fragment
         android:id="@+id/item_list"
         android:name="com.example.main.fragments.ProductListFragment"
-        android:label="DetailFragment" />
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_item_list_to_item_details"
+            app:destination="@id/item_details" />
+    </fragment>
     <fragment
         android:id="@+id/item_details"
         android:name="com.example.main.fragments.ProductDetailsFragment"
-        android:label="DetailFragment" />
+        android:label="DetailFragment" >
+        <argument
+            android:name="product"
+            app:argType="com.example.main.model.Product" />
+    </fragment>
 
 </navigation>
