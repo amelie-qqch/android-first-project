@@ -26,28 +26,17 @@ class ProductDetailsSummaryFragment : Fragment() { // ne jamais passer d'argumen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         requireContext()
 
-        val carrotAndPeas = Product(
-                "Petits pois et carottes",
-                "Cassegrain",
-                "3083680085304",
-                "A",
-                "https://static.openfoodfacts.org/images/products/308/368/008/5304/front_fr.7.400.jpg",
-                "400 g (280 g net égoutté)",
-                "France, Japon, Suisse",
-                "Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel",
-                "Aucune",
-                "Aucun"
-        )
+        val product = ProductDetailsFragmentArgs.fromBundle(requireParentFragment().requireParentFragment().requireArguments()).product
 
-        product_name.setText(carrotAndPeas.name)
-        product_brand.setText(carrotAndPeas.brand)
-        product_bar_code.setText(carrotAndPeas.barCode)
-        product_weight.setText(carrotAndPeas.weight)
-        product_countries.setText(carrotAndPeas.sellingCountries)
-        product_ingredients.setText(carrotAndPeas.ingredients)
-        product_allergens.setText(carrotAndPeas.allergens)
-        product_additives.setText(carrotAndPeas.additives)
-        Picasso.get().load(carrotAndPeas.imageUrl).into(product_picture)
+        product_name.setText(product.name)
+        product_brand.setText(product.brand)
+        product_bar_code.setText(product.barCode)
+        product_weight.setText(product.weight)
+        product_countries.setText(product.sellingCountries)
+        product_ingredients.setText(product.ingredients)
+        product_allergens.setText(product.allergens)
+        product_additives.setText(product.additives)
+        Picasso.get().load(product.imageUrl).into(product_picture)
 
         super.onViewCreated(view, savedInstanceState)
     }
