@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         )
         supportActionBar?.setTitle(getString(R.string.products_page_name))
 
+        //Masque la flèche de retour
+        supportActionBar?.setDisplayShowHomeEnabled(false)
+
         //layout dans lequel se trouve le navigation graph
         setContentView(R.layout.activity_main)
     }
