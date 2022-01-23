@@ -1,7 +1,6 @@
 package com.example.main.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -40,7 +39,6 @@ class ProductDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         ProductDetailsFragmentArgs.fromBundle(requireArguments()).product
-
 
         val navHost = childFragmentManager.findFragmentById(R.id.product_details_nav_host) as NavHostFragment
         NavigationUI.setupWithNavController(product_details_bottom_nav, navHost.navController)
