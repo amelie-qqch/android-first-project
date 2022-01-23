@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/button.xml" value="0.340625" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_calories.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_empty_saved.xml" value="0.209375" />

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Mon comparateur</string>
     <string name="details_page_name">Détails</string>
+    <string name="products_page_name">Mes produits</string>
     <string name="product_weight_label">Quantité :</string>
     <string name="product_countries_label">Vendu en :</string>
     <string name="product_ingredients_label">Ingrédients :</string>

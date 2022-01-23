@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.main.model.NutritionFactsItem
 import com.example.test.R
@@ -23,23 +24,18 @@ class ProductDetailsNutritionalValuesFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         requireContext()
         fillValues()
-        super.onViewCreated(view, savedInstanceState)
     }
 
     fun fillValues(){
-        val nutritionFacts: List<NutritionFactsItem> = listOf(
-                NutritionFactsItem("Énergie", "?", 293.toFloat()),
-                NutritionFactsItem("Matières grasses / Lipides","?", 0.8.toFloat()),
-                NutritionFactsItem("Acides gras saturés","?", 0.1.toFloat()),
-                NutritionFactsItem("Glucides", "?", 8.4.toFloat()),
-                NutritionFactsItem("Sucres", "?", 5.2.toFloat()),
-                NutritionFactsItem("Fibres alimentaires", "?", 5.2.toFloat()),
-                NutritionFactsItem("Protéines", "?", 4.8.toFloat()),
-                NutritionFactsItem("Sel","?",0.75.toFloat()),
-                NutritionFactsItem("Sodium","?", 0.295.toFloat()),
-        )
+        val nutritionFacts = ProductDetailsFragmentArgs
+            .fromBundle(
+                requireParentFragment().requireParentFragment().requireArguments()
+            ).product.nutritions
+
         //Quelle horreur ! : Faire un tableau des composant ?
         energy_per_hundred_grams.setText(nutritionFacts.get(0).quantityPerHundredGrams.toString())
         energy_per_share.setText(nutritionFacts.get(0).quantityPerPortion)

@@ -31,17 +31,8 @@ class ProductDetailsNutritionFragment: Fragment() {
         val nutrientLevelLow        = ContextCompat.getColor(context, R.color.nutrient_level_low)
         val nutrientLevelModerate   = ContextCompat.getColor(context, R.color.nutrient_level_moderate)
         val nutrientLevelHigh       = ContextCompat.getColor(context, R.color.nutrient_level_high)
-        val nutritionFacts: List<NutritionFactsItem> = listOf(
-                NutritionFactsItem("Énergie", "?", 293.toFloat()),
-                NutritionFactsItem("Matières grasses / Lipides","?", 0.8.toFloat()),
-                NutritionFactsItem("Acides gras saturés","?", 0.1.toFloat()),
-                NutritionFactsItem("Glucides", "?", 8.4.toFloat()),
-                NutritionFactsItem("Sucres", "?", 5.2.toFloat()),
-                NutritionFactsItem("Fibres alimentaires", "?", 5.2.toFloat()),
-                NutritionFactsItem("Protéines", "?", 4.8.toFloat()),
-                NutritionFactsItem("Sel","?",0.75.toFloat()),
-                NutritionFactsItem("Sodium","?", 0.295.toFloat()),
-        )
+
+
         //TODO automatiser avec les règles : https://fr.openfoodfacts.org/reperes-nutritionnels
 
         DrawableCompat.setTintList(nutrient_level_lipid.background, ColorStateList.valueOf(nutrientLevelLow))

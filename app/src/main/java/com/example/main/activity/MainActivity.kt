@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setBackgroundDrawable(
             ContextCompat.getDrawable(this, R.drawable.toolbar)
         )
+        supportActionBar?.setTitle(getString(R.string.products_page_name))
 
         //layout dans lequel se trouve le navigation graph
         setContentView(R.layout.activity_main)

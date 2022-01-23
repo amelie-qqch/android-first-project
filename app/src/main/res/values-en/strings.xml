@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">OpenFoodFacts</string>
     <string name="details_page_name">Details</string>
+    <string name="products_page_name">My products</string>
     <string name="product_title">product_title</string>
     <string name="product_subTitle">product_subtitle</string>
     <string name="product_bar_code_label">Bar code:</string>

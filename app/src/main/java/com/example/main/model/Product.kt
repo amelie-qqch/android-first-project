@@ -15,6 +15,7 @@ data class Product(
         val ingredients: String,
         val allergens: String,
         val additives: String,
+        val nutritions: List<NutritionFactsItem>
 ): Parcelable {
 
 }
