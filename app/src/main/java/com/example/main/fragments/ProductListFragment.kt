@@ -1,7 +1,6 @@
 package com.example.main.fragments
 
 import android.content.Intent
-import android.content.Intent.getIntent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString

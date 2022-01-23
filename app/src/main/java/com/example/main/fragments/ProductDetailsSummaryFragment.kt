@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.main.model.Product
 import com.example.test.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.details_layout.*

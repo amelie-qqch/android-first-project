@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.Fragment
-import com.example.main.model.NutritionFactsItem
 import com.example.test.R
 import kotlinx.android.synthetic.main.nutrition_details.*
 
