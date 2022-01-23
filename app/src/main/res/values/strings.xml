@@ -14,5 +14,8 @@
     <string name="nutriscore_e_desc" translatable="false">Nutriscore : A</string>
     <string name="scrollView_menu_description">image du produit</string>
     <string name="tab_detail">Détails</string>
+    <string name="no_products">Vous n\'avez encore rien scanné !</string>
+    <string name="start_scanning">Cliquez sur le bouton ci-dessous pour commencer.</string>
+    <string name="scan_product">Scanner un produit</string>
 
 </resources>

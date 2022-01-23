@@ -3,32 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../layout/custom_preview.xml" value="0.20833333333333334" />
-        <entry key="app/src/main/res/drawable/button.xml" value="0.340625" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_calories.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_empty_saved.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_ranking.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_scan.xml" value="0.33958333333333335" />
         <entry key="app/src/main/res/drawable/toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/details_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/empty_list.xml" value="0.15273556231003038" />
+        <entry key="app/src/main/res/layout/empty_list.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/food.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/nav_details_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/nav_list_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/new_details_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/new_item_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/new_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/nutrition_details.xml" value="0.10552536231884058" />
-        <entry key="app/src/main/res/layout/nutritionnal_informations.xml" value="0.10552536231884058" />
-        <entry key="app/src/main/res/menu/app_nav.xml" value="0.19322916666666667" />
-        <entry key="app/src/main/res/menu/product_details_tab.xml" value="0.2" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.3234375" />
+        <entry key="app/src/main/res/menu/product_details_tab.xml" value="0.3234375" />
       </map>
     </option>
   </component>

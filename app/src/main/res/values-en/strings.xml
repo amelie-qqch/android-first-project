@@ -13,4 +13,8 @@
     <string name="product_additives_label">Additives:</string>
     <string name="scrollView_menu_description">food image</string>
     <string name="tab_detail">Details</string>
+    <string name="no_products">You haven\'t scanned anything yet</string>
+    <string name="start_scanning">Click on the button to start.</string>
+    <string name="scan_product">Scan product</string>
+
 </resources>

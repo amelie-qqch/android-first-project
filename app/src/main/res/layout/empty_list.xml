@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@id/empty_list_middle_guide"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Vous n'avez encore rien scanné !"
+        android:text="@string/no_products"
         android:textSize="16sp"
         android:textStyle="bold"
         android:textAlignment="center"/>
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/no_scanned_product"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Cliquez sur le bouton ci-dessous pour commencer."
+        android:text="@string/start_scanning"
         android:textSize="14sp"
         android:textAlignment="center"/>
     <Button
@@ -51,7 +51,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/no_scanned_product_info"
-        android:text="Scanner un produit"
+        android:text="@string/scan_product"
         android:textSize="14sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

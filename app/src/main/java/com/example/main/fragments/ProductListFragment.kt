@@ -1,17 +1,13 @@
 package com.example.main.fragments
 
-import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.StyleSpan
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -112,27 +108,8 @@ class ProductListFragment: Fragment() {
             )
             adapter = listAdapter
         }
-        //Ouverture du scanner au click sur le bouton
-//        products_start_scan.setOnClickListener {
-//            startActivityForResult(
-//                Intent("com.google.zxing.client.android.SCAN")
-//                    .putExtra("SCAN_FORMATS", "EAN_13"),
-//                100
-//            )
-//        }
 
 
-    }
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if(data == null || requestCode != 100){
-            return
-        }
-
-        val barCodeType = data.getStringExtra("SCAN_RESULT_FORMAT")
-        val barCode     = data.getStringExtra("SCAN_RESULT")
-        // Use the data - in this case display it in a Toast.
-        Toast.makeText(context, "Result: " + barCode, Toast.LENGTH_LONG).show()
     }
 
     class ListAdapter(private val products: List<Product>, val listener: ItemClickListener) : RecyclerView.Adapter<ListItemCell>() {
